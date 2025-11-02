@@ -10,13 +10,27 @@ public class Car_Chapter15 {
 		System.out.println("ギア" + gear +"から" + afterGear +"に切り替えました");
 		//	ギアの値に応じて速度を決定
 		switch(afterGear){
-		case 1   -> speed = 10;
-		case 2   -> speed = 20;
-		case 3   -> speed = 30;		
-		case 4   -> speed = 40;		
-		case 5   -> speed = 50;		
-		default  -> speed = 10;	
+		case 1:
+			speed = 10;
+			break;
+		case 2:
+			speed = 20;
+			break;
+		case 3:
+			speed = 30;
+			break;
+		case 4:
+			speed = 40;
+			break;
+		case 5:
+			speed = 50;
+			break;
+		default:
+			speed = 10;
+			break;
 		}
+		//フィールドのgearをafterGearの値に更新する
+		this.gear = afterGear;
 	}
 	//	runメソッドの宣言
 		public void run() {
